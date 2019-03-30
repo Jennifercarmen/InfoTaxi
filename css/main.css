@@ -14,6 +14,10 @@ p.texto.bold.center.colorwhite {
 input[type="text"] {
     color: white !important;
 }
+input#writepost[type=text]:not(.browser-default) {
+    width: 85%;
+    color: black !important;
+}
 body {
     font-family: 'Raleway', sans-serif;
     box-sizing: border-box;

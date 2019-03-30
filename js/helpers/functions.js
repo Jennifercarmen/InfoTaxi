@@ -86,7 +86,7 @@ function postear() {
 };
 // todos los post usersGeneral
 function viewPost() {
-  if (window.location.href == "http://localhost:5500/views/info.html") {
+  if (window.location.href == "https://jennifercarmen.github.io/InfoTaxi/views/info.html") {
     firebase.database().ref('post').on('child_added', function(snapshot) {
       var html = '';
       var key = snapshot.key;
@@ -147,7 +147,7 @@ function viewPost() {
         });
       });
     });
-  } else if (window.location.href == "http://localhost:5500/views/desktop.html") {
+  } else if (window.location.href == "https://jennifercarmen.github.io/InfoTaxi/views/desktop.html") {
     firebase.auth().onAuthStateChanged(function(user) {
       var uiduser = user.uid;
       firebase.database().ref('post').orderByChild('count').on('child_added', function(snapshot) {
